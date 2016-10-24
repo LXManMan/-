@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你说啥，你愁啥哈哈哈哈哈" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-UG-irR">
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf0-Te-8Co">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="6Bs-CW-b55"/>
+                            <constraint firstAttribute="width" constant="46" id="Rvh-Lh-ixT"/>
+                        </constraints>
+                        <state key="normal" title="评论"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KfO-UG-irR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AFi-0X-1z1"/>
+                    <constraint firstAttribute="trailing" secondItem="sf0-Te-8Co" secondAttribute="trailing" constant="10" id="Ld7-4m-qqW"/>
+                    <constraint firstItem="sf0-Te-8Co" firstAttribute="top" secondItem="KfO-UG-irR" secondAttribute="bottom" constant="10" id="WSy-Lu-SmI"/>
+                    <constraint firstItem="KfO-UG-irR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aiz-kD-jwq"/>
+                    <constraint firstAttribute="bottom" secondItem="sf0-Te-8Co" secondAttribute="bottom" constant="10" id="cLS-qW-lAv"/>
+                    <constraint firstAttribute="trailing" secondItem="KfO-UG-irR" secondAttribute="trailing" constant="10" id="gyj-k5-aAc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentBtn" destination="sf0-Te-8Co" id="wvY-s4-cUp"/>
+                <outlet property="contentLabel" destination="KfO-UG-irR" id="dL1-aU-vBc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
